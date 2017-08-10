@@ -18,8 +18,10 @@ statement -> INPUT STRING V      (STRING is the token for a "whatever")
 statement -> NEWLINE          (newline)
 
 
-
-(use E instead of <expression>, etc.)
+E = expression
+T = Term
+F = function
+BIFN = built in function
 
 E -> T
 
