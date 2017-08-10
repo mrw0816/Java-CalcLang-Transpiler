@@ -12,7 +12,7 @@ CalcLang Context free grammar:  (E = <expression>)
 <statement> -> INPUT STRING V      (STRING is the token for a "whatever")
 <statement> -> NEWLINE          (newline)
 
-    (use E instead of <expression>, etc.)
+(use E instead of <expression>, etc.)
 
 E -> T
 E -> T + E | T - E
@@ -20,9 +20,9 @@ E -> T + E | T - E
 T -> F
 T -> F * T | F / T
 
-F -> N          (from lexical phase:  number)
-F -> V          (from lexical phase:  variable)
+F -> N    (from lexical phase:  number)
+F -> V    (from lexical phase:  variable)
 F -> (E)
 F -> - F
-F -> BIFN ( E )
+F -> BIFN (E)
 ------------------------------------------------------------
