@@ -3,8 +3,7 @@
 -------------------------------------------------------
 CalcLang Context free grammar:  (E = expression) 
 
-statements -> statement
-
+statements -> statement\n
 statements -> statement statements
 
 statement -> V = E
