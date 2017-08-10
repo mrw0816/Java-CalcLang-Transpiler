@@ -1,9 +1,9 @@
 # Java-CalcLang-Transpiler
 
 -------------------------------------------------------
-CalcLang Context free grammar:  (E = <expression>) 
+CalcLang Context free grammar:  (E = expression) 
 
-<statements> -> <statement>
+statements -> <statement>
 <statements> -> <statement> <statements>
 
 <statement> -> V = E
