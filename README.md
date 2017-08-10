@@ -3,13 +3,18 @@
 -------------------------------------------------------
 CalcLang Context free grammar:  (E = expression) 
 
-statements -> statement\n
+statements -> statement
+
 statements -> statement statements
 
 statement -> V = E
+
 statement -> SHOW E           (show)
+
 statement -> MESSAGE STRING   (keyword is "msg")
+
 statement -> INPUT STRING V      (STRING is the token for a "whatever")
+
 statement -> NEWLINE          (newline)
 
 (use E instead of <expression>, etc.)
