@@ -1,0 +1,45 @@
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class CalcLang {
+
+	public static void main(String args[]){
+
+		HashMap<String, Double> varHashMap = new HashMap<>();
+		Scanner scnr = new Scanner(System.in);
+
+		//Start of CalcLang code
+		System.out.print("HELLO WORLD!!!");
+		System.out.println();
+		varHashMap.put( "x" , (double)3 );
+		varHashMap.put( "y" , (double) 5 );
+		varHashMap.put( "z" , (double) (varHashMap.get( "x" )+varHashMap.get( "y" )) * 7  );
+		System.out.println();
+		System.out.print("hello");
+		System.out.println();
+		System.out.print( varHashMap.get( "z" ) );
+		System.out.print("boom");
+		System.out.print("z = ");
+		System.out.print( varHashMap.get( "z" ) );
+		System.out.println();
+		System.out.print("angle = ");
+		varHashMap.put("angle", scnr.nextDouble());
+		System.out.print( varHashMap.get( "angle" )  );
+		System.out.println();
+		varHashMap.put( "w" , (double) Math.sin( (varHashMap.get( "angle" )) ) );
+		System.out.print("w = ");
+		System.out.print( varHashMap.get( "w" )  );
+		System.out.println();
+		varHashMap.put( "z" , (double) -varHashMap.get( "z" ) );
+		System.out.print("ok: ");
+		System.out.print( varHashMap.get( "z" )  );
+		System.out.println();
+		varHashMap.put( "z" , (double) -varHashMap.get( "z" ) );
+		System.out.print("ok: ");
+		System.out.print( varHashMap.get( "z" )  );
+		System.out.println();
+		System.out.print("abs: ");
+		System.out.print( ((varHashMap.get( "z" )))  );
+		System.out.println();
+	}
+}
